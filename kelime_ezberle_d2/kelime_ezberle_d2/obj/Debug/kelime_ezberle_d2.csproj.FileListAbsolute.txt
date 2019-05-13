@@ -1,0 +1,11 @@
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\bin\Debug\dbSozluk.accdb
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\bin\Debug\kelime_ezberle_d2.exe.config
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\bin\Debug\kelime_ezberle_d2.exe
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\bin\Debug\kelime_ezberle_d2.pdb
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.csprojAssemblyReference.cache
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.Form1.resources
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.Properties.Resources.resources
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.csproj.GenerateResource.cache
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.csproj.CoreCompileInputs.cache
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.exe
+C:\Users\asil\Desktop\yp_proje_denemeler\kelime_ezberle_d2\kelime_ezberle_d2\obj\Debug\kelime_ezberle_d2.pdb
