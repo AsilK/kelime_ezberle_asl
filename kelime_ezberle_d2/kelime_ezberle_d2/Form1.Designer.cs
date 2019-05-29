@@ -39,12 +39,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblCevap = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnKelimeEkle = new System.Windows.Forms.Button();
+            this.lblKelimeEklemeBölümü = new System.Windows.Forms.Label();
+            this.txt_TurkceEkle = new System.Windows.Forms.TextBox();
+            this.txt_IngilizceEkle = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_KelimeSil = new System.Windows.Forms.Button();
+            this.txtKelimeId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtIngilizce
             // 
             this.txtIngilizce.Location = new System.Drawing.Point(229, 34);
-            this.txtIngilizce.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIngilizce.Margin = new System.Windows.Forms.Padding(4);
             this.txtIngilizce.Name = "txtIngilizce";
             this.txtIngilizce.Size = new System.Drawing.Size(148, 26);
             this.txtIngilizce.TabIndex = 10;
@@ -133,11 +143,107 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnKelimeEkle
+            // 
+            this.btnKelimeEkle.Location = new System.Drawing.Point(817, 98);
+            this.btnKelimeEkle.Name = "btnKelimeEkle";
+            this.btnKelimeEkle.Size = new System.Drawing.Size(111, 27);
+            this.btnKelimeEkle.TabIndex = 11;
+            this.btnKelimeEkle.Text = "Kelime Ekle";
+            this.btnKelimeEkle.UseVisualStyleBackColor = true;
+            this.btnKelimeEkle.Click += new System.EventHandler(this.btnKelimeEkle_Click);
+            // 
+            // lblKelimeEklemeBölümü
+            // 
+            this.lblKelimeEklemeBölümü.AutoSize = true;
+            this.lblKelimeEklemeBölümü.Location = new System.Drawing.Point(790, 8);
+            this.lblKelimeEklemeBölümü.Name = "lblKelimeEklemeBölümü";
+            this.lblKelimeEklemeBölümü.Size = new System.Drawing.Size(172, 18);
+            this.lblKelimeEklemeBölümü.TabIndex = 12;
+            this.lblKelimeEklemeBölümü.Text = "Kelime Ekleme Bölümü";
+            // 
+            // txt_TurkceEkle
+            // 
+            this.txt_TurkceEkle.Location = new System.Drawing.Point(828, 29);
+            this.txt_TurkceEkle.Name = "txt_TurkceEkle";
+            this.txt_TurkceEkle.Size = new System.Drawing.Size(100, 26);
+            this.txt_TurkceEkle.TabIndex = 13;
+            // 
+            // txt_IngilizceEkle
+            // 
+            this.txt_IngilizceEkle.Location = new System.Drawing.Point(828, 61);
+            this.txt_IngilizceEkle.Name = "txt_IngilizceEkle";
+            this.txt_IngilizceEkle.Size = new System.Drawing.Size(100, 26);
+            this.txt_IngilizceEkle.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(743, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 18);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Türkçe";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(743, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 18);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "İngilizce";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(790, 174);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(158, 18);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Kelime Silme Bölümü";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(722, 229);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 18);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "kelime Id:";
+            // 
+            // btn_KelimeSil
+            // 
+            this.btn_KelimeSil.Location = new System.Drawing.Point(841, 302);
+            this.btn_KelimeSil.Name = "btn_KelimeSil";
+            this.btn_KelimeSil.Size = new System.Drawing.Size(107, 23);
+            this.btn_KelimeSil.TabIndex = 19;
+            this.btn_KelimeSil.Text = "Kelime Sil";
+            this.btn_KelimeSil.UseVisualStyleBackColor = true;
+            this.btn_KelimeSil.Click += new System.EventHandler(this.btn_KelimeSil_Click);
+            // 
+            // txtKelimeId
+            // 
+            this.txtKelimeId.Location = new System.Drawing.Point(841, 229);
+            this.txtKelimeId.Name = "txtKelimeId";
+            this.txtKelimeId.Size = new System.Drawing.Size(100, 26);
+            this.txtKelimeId.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 246);
+            this.ClientSize = new System.Drawing.Size(963, 352);
+            this.Controls.Add(this.txtKelimeId);
+            this.Controls.Add(this.btn_KelimeSil);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_IngilizceEkle);
+            this.Controls.Add(this.txt_TurkceEkle);
+            this.Controls.Add(this.lblKelimeEklemeBölümü);
+            this.Controls.Add(this.btnKelimeEkle);
             this.Controls.Add(this.lblCevap);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTurkce);
@@ -148,7 +254,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIngilizce);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -169,6 +275,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblCevap;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnKelimeEkle;
+        private System.Windows.Forms.Label lblKelimeEklemeBölümü;
+        private System.Windows.Forms.TextBox txt_TurkceEkle;
+        private System.Windows.Forms.TextBox txt_IngilizceEkle;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_KelimeSil;
+        private System.Windows.Forms.TextBox txtKelimeId;
     }
 }
 

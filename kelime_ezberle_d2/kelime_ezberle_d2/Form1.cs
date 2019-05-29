@@ -19,16 +19,17 @@ namespace kelime_ezberle_d2
         }
 
         OleDbConnection baglanti =
-               new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\dbSozluk.accdb");
+               new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\asil\Desktop\SozlukDB\dbSozluk.accdb");
+        
 
-        Random rnd = new Random();
-
+          Random rnd = new Random();
+        int kitapSayisi = 2491;
         int sure = 90;
         int kelime = 0;
 
         void getir()
         {
-            int sayi = rnd.Next(1, 2300);
+            int sayi = rnd.Next(1, kitapSayisi);
 
 
             baglanti.Open();
@@ -76,6 +77,34 @@ namespace kelime_ezberle_d2
                 txtIngilizce.Enabled = false;
                 timer1.Stop();
             }
+        }
+
+        private void btnKelimeEkle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            OleDbCommand ekle1 = new OleDbCommand("insert into sozluk (ingilizce, turkce) values (@p1,@p2)", baglanti);
+            ekle1.Parameters.AddWithValue("@p1", txt_TurkceEkle.Text);
+            ekle1.Parameters.AddWithValue("@p2", txt_IngilizceEkle.Text);
+            ekle1.ExecuteNonQuery();
+            baglanti.Close();
+            kitapSayisi += 1;
+            MessageBox.Show("Kelime Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+
+
+        }
+
+        private void btn_KelimeSil_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            OleDbCommand sil1 = new OleDbCommand("Delete From sozluk where id=@p1", baglanti);
+            sil1.Parameters.AddWithValue("@p1", txtKelimeId.Text);
+            sil1.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Kelime Listeden Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            kitapSayisi -= 1;
+            
+            
         }
     }
 }
